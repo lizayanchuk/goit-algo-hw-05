@@ -6,7 +6,7 @@ text = "Загальний дохід працівника складаєтьс�
 
 
 def generator_numbers(text: str):
-    for num in re.findall(r"\d+(?:\.\d+)?", text):
+    for num in re.findall(r" \d+(?:\.\d+)? ", text):
         yield float(num)
 
 
